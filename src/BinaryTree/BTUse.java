@@ -63,6 +63,14 @@ public class BTUse {
 		PrintTree(root.right);
 		
 	}
+	public static void PrintInorder(BTNode<Integer> root) {
+		if(root==null) {
+			return;
+		}
+		PrintInorder(root.left);
+		System.out.print(root.data);
+		PrintTree(root.right);
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -76,8 +84,9 @@ public class BTUse {
 //		rootleft.right = rootleftright;
 //		rootright.left = rootrightleft;
 //		
-		//PrintTree(root);
+		//PrintInorder(root);
 		PrintDetailedTree(takeInputBetter(true,0,true));
+	
 	}
 
 }
