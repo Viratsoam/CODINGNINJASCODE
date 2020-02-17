@@ -159,11 +159,11 @@ public static Node<Integer> AlterList(Node<Integer> head1,  Node<Integer> head2)
 					if(map.containsKey(temp1.data)){
 	                    int val = map.get(temp1.data);
 	                     if((temp1.data & 1) !=0){
-	                          if(val>=1){
+	                          if(val>1){
 	                        temp.next = temp1;
 	                        temp = temp.next;
 	                        map.put(temp1.data,val-1);
-	                    }else {
+	                    }else if(val==1){
 	                    	map.remove(temp1.data);
 	                    }
 	                     }

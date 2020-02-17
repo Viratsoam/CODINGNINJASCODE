@@ -1,0 +1,66 @@
+1.)Priority Queues:-
+
+	"Create the Queue based on their Priority."
+	 Priority :- can be based on :- Time,Age,VIP,Value
+	 
+2.)Types:-
+	1. Min Priority Queues
+	2. Max Priority Queues
+
+3.)Basic Operations:
+	1. Insert
+	2. getMin / getMax
+	3. removeMin/ removeMax
+
+4.)Ways to implement the Priority Queues:-
+
+	1.) Implement Min/Max Priority Queues:-
+	
+		1. Arrays(Unsorted) or ArrayList 
+			Insertion :- O(1) , getMin :- O(n), Remove :- O(n)
+		2. Arrays (Sorted)
+			O(n),O(1),O(n)
+		3. LinkedList(Unsorted)
+			O(1),O(n),O(n)
+		4. LinkedList(Sorted)
+			O(n),O(1),O(1)
+		5. BST
+			O(h),O(h),O(h)
+		6. Balanced BST    (Best)
+			O(log(n)),O(log(n)),O(log(n))
+		7. HashMap
+			O(1),O(n),O(n)
+		8. Heap   (Best) (More Easy To implement
+			O(log(n)),O(log(n)),O(log(n))
+
+5.) Heaps
+		1.) Properties
+			(i.) Complete Binary Tree
+			(ii.) Heap order Property
+				
+				
+				(i.) Complete Binary Tree
+						1.) All levels should be completely filled except the last one
+						2.) Element Should be inserted from L to R in each level.
+					- Height in CBT is O(log(n))
+					- Minimum Number of Nodes of height(h) are 2^0+2^1+... to (2^h-2)+1
+					- Maximum Number of Nodes of height(h) are 2^0+2^1+--- to (2^h-1)
+					- Height of CBT is O(log(n))
+				
+						2.) How to store CBT
+							parent:
+								left:- 2*i+1
+								right:- 2*i+2
+							child:
+								left :- (i-1)/2
+								right: (i-1)/2
+				(ii.) Heap Order Property
+						1.) Every heap is a complete binary tree but every binary tree is not a heap
+						2.) Min Heaps :- every root node should be less than their child
+						3.) Max Heaps :- every root node should be greater than their child
+						
+						
+						
+			
+			
+
